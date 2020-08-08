@@ -14,13 +14,15 @@ class Navbar extends Component {
   }
   render() {
     return (
-      <ul>
-        {this.state.menus.map((menu) => (
-          <li className="navbar">
-            <Link to={menu.path}>{menu.label}</Link>
-          </li>
-        ))}
-      </ul>
+      <nav>
+        <ul>
+          {this.state.menus.map((menu) => (
+            <li className="navbar">
+              <Link to={menu.path}>{menu.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     );
   }
 }
