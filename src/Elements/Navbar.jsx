@@ -15,13 +15,12 @@ class Navbar extends Component {
   render() {
     return (
       <nav>
-        <ul>
+        <ul id="nav">
           {this.state.menus.map((menu) => (
             <li className="navbar">
               <Link to={menu.path}>{menu.label}</Link>
             </li>
           ))}
-          <li></li>
         </ul>
       </nav>
     );
