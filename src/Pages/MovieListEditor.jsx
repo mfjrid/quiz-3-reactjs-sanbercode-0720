@@ -177,6 +177,11 @@ const MovieListEditor = () => {
   return (
     <div>
       <section>
+        <p>
+          Halaman ini hanya bisa diakses setelah login dan klik button Movie
+          Editor
+        </p>
+
         <h1>Movie List Editor</h1>
         <table>
           <thead>
