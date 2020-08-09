@@ -5,17 +5,8 @@ const MovieListEditor = (props) => {
   return (
     <div>
       <section>
-        <button
-          onClick={() => {
-            Auth.logout(() => {
-              props.history.push("/");
-            });
-          }}
-        >
-          Logout
-        </button>
+        <h6>Halaman ini hanya bisa dilihat setelah klik button Movie Editor</h6>
         <h1>Ini Movie List Editor</h1>
-        <h3>Hanya bisa dilihat setelah klik login</h3>
       </section>
     </div>
   );

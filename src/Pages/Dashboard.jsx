@@ -3,7 +3,7 @@ import Footer from "../Elements/Footer";
 import Auth from "../Auth/Auth";
 import axios from "axios";
 
-class Index extends Component {
+class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,12 +43,22 @@ class Index extends Component {
         <section>
           <button
             onClick={() => {
-              Auth.login(() => {
-                this.props.history.push("dashboard");
+              Auth.logout(() => {
+                this.props.history.push("/");
               });
             }}
           >
-            Login
+            Logout
+          </button>
+          <button
+            style={{ marginTop: "10px" }}
+            onClick={() => {
+              Auth.login(() => {
+                this.props.history.push("/movie-editor");
+              });
+            }}
+          >
+            Movie Editor
           </button>
           <h1>Daftar Film Film Terbaik</h1>
           <div id="article-list">
@@ -81,4 +91,4 @@ class Index extends Component {
   }
 }
 
-export default Index;
+export default Dashboard;

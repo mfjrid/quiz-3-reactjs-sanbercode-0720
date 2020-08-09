@@ -6,6 +6,7 @@ import Index from "./Pages/Index";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import MovieListEditor from "./Pages/MovieListEditor";
+import Dashboard from "./Pages/Dashboard";
 import ProtectedRoute from "./Auth/ProtectedRoute";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             exact
             component={MovieListEditor}
           />
+          <ProtectedRoute path="/dashboard" exact component={Dashboard} />
         </Switch>
       </div>
     </Router>
