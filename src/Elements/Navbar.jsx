@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       menus: [
         { label: "Home", path: "/" },
@@ -21,6 +21,7 @@ class Navbar extends Component {
               <Link to={menu.path}>{menu.label}</Link>
             </li>
           ))}
+          <li></li>
         </ul>
       </nav>
     );

@@ -1,9 +1,6 @@
 import React from "react";
+// import axios from "axios";
 
 export default function HomeBody() {
-  return (
-    <div>
-      <section>Ini Body Home</section>
-    </div>
-  );
+  return <div>Tes</div>;
 }
