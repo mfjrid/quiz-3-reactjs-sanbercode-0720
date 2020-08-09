@@ -6,6 +6,7 @@ import Index from "./Pages/Index";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import MovieListEditor from "./Pages/MovieListEditor";
+import ProtectedRoute from "./Auth/ProtectedRoute";
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
           <Route path="/" exact component={Index} />
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
-          <Route path="/movie-editor" exact component={MovieListEditor} />
+          <ProtectedRoute
+            path="/movie-editor"
+            exact
+            component={MovieListEditor}
+          />
         </Switch>
       </div>
     </Router>
