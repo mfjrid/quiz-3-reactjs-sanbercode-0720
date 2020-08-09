@@ -236,13 +236,14 @@ const MovieListEditor = () => {
               <br />
               <br />
               <label style={{ float: "left" }}>Description :</label>
-              <input
+              <textarea
                 style={{ float: "right" }}
-                type="text"
                 name="description"
+                cols="30"
+                rows="1"
                 value={input.description}
                 onChange={handleChange}
-              />
+              ></textarea>
               <br />
               <br />
               <label style={{ float: "left" }}>Year :</label>
@@ -255,7 +256,7 @@ const MovieListEditor = () => {
               />
               <br />
               <br />
-              <label style={{ float: "left" }}>Duration :</label>
+              <label style={{ float: "left" }}>Duration (dalam menit) :</label>
               <input
                 style={{ float: "right" }}
                 type="text"
@@ -275,7 +276,7 @@ const MovieListEditor = () => {
               />
               <br />
               <br />
-              <label style={{ float: "left" }}>Rating :</label>
+              <label style={{ float: "left" }}>Rating (1-10) :</label>
               <input
                 style={{ float: "right" }}
                 type="text"
